@@ -6,15 +6,6 @@ const PORT = 8000;
 
 //Middleware - Pluggin
 app.use(express.urlencoded({extended:false}));
-app.use((req,res,next)=>{
-    console.log("Hello from middleware 1");
-    next();
-});
-
-app.use((req,res,next)=>{
-    console.log("Hello from middleware 2");
-    next();
-});
 //Routes
 app("/",(req,res)=>{
    console.log("Welcome to the Employee Data");
