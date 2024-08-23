@@ -7,10 +7,6 @@ const PORT = 8000;
 //Middleware - Pluggin
 app.use(express.urlencoded({extended:false}));
 //Routes
-app("/",(req,res)=>{
-   console.log("Welcome to the Employee Data");
-});
-
 app.get("/users",(req,res)=>{
     const html =
     `<ul>
