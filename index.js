@@ -16,6 +16,9 @@ app.use((req,res,next)=>{
     next();
 });
 //Routes
+app("/",(req,res)=>{
+   console.log("Welcome to the Employee Data");
+});
 
 app.get("/users",(req,res)=>{
     const html =
